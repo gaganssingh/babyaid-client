@@ -7,16 +7,13 @@ function Navigation() {
 		<nav className="Navigation">
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+					<Link to="/starthere">Start Here</Link>
 				</li>
 				<li>
 					<Link to="/recipes">Recipes</Link>
 				</li>
 				<li>
 					<Link to="/doctors">Doctors</Link>
-				</li>
-				<li>
-					<Link to="/signuplogin">Signup or Login</Link>
 				</li>
 			</ul>
 		</nav>

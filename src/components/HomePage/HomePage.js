@@ -15,7 +15,7 @@ function HomePage() {
 					A couple of ingredients and a few minutes is all it takes to make a healthy, nutritious meal for the kids
 				</p>
 				<button>
-					<Link to="/findrecipe">Find A Recipe</Link>
+					<Link to="/recipes">Find A Recipe</Link>
 				</button>
 			</section>
 			<section className="HomePage__section">
@@ -25,7 +25,7 @@ function HomePage() {
 					Let's make that easy.
 				</p>
 				<button>
-					<Link to="/findrecipe">Find A Doctor</Link>
+					<Link to="/doctors">Find A Doctor</Link>
 				</button>
 			</section>
 			<section className="HomePage__section HomePage__section__last">
