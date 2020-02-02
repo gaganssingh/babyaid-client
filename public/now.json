@@ -1,0 +1,9 @@
+{
+	"version": 2,
+	"alias": "babyaid-client",
+	"name": "babyaid-client",
+	"routes": [
+		{ "handle": "filesystem" },
+		{ "src": "/.*", "dest": "/index.html" }
+	]
+}

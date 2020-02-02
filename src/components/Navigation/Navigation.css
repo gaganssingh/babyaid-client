@@ -1,0 +1,10 @@
+ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+	font-size: .8em;
+}
