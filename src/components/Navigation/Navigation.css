@@ -1,10 +1,10 @@
-ul {
+.Navigation ul {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-li {
+.Navigation li {
 	list-style: none;
 	text-decoration: none;
-	font-size: .8em;
+	/* font-size: .8em; */
 }

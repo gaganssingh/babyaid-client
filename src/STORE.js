@@ -2,7 +2,7 @@ export default {
 	recipes : [
 		{
 			id           : 1,
-			age          : "4 to 6 months",
+			age          : "six",
 			title        : "Pea purée",
 			nutrients    : [
 				"Vitamin A",
@@ -28,7 +28,7 @@ export default {
 		},
 		{
 			id           : 2,
-			age          : "4 to 6 months",
+			age          : "six",
 			title        : "Banana purée",
 			nutrients    : [
 				"Fibre",
