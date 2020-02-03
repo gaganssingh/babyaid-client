@@ -5,7 +5,6 @@ class Doctor extends React.Component {
 		return (
 			<div className="Doctor">
 				<h2>{this.props.result.name}</h2>
-				<img src={this.props.result.image_url} alt={this.props.result.name} />
 				<div className="Doctor-information">
 					<div className="Doctor-address">
 						<p>{this.props.result.phone}</p>
