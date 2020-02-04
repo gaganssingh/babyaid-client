@@ -1,26 +1,28 @@
 import React from "react";
-import "./Recipes.css";
+import recipes from "../../utilities/recipes";
 import RecipeAgeSelection from "../RecipeAgeSelection/RecipeAgeSelection";
 import RecipeList from "../RecipeList/RecipeList";
+import "./Recipes.css";
 
 class Recipes extends React.Component {
 	state = {
-		selectedAge : "",
-		recipes     : []
+		recipes : []
 	};
 
 	handleSelectedAge = age => {
-		this.setState({
-			selectedAge : age
+		recipes.searchByAge(age).then(response => {
+			this.setState({
+				recipes : response
+			});
 		});
 	};
 
 	render() {
 		let results;
-		if (this.state.selectedAge === "") {
+		if (this.state.recipes.length === 0) {
 			results = <h4>Please select age from the dropdown</h4>;
 		} else {
-			results = <RecipeList selectedAge={this.state.selectedAge} />;
+			results = <RecipeList recipes={this.state.recipes} />;
 		}
 
 		return (
