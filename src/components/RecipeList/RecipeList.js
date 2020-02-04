@@ -1,20 +1,62 @@
 import React from "react";
+import config from "../../utilities/config";
+import Recipe from "../Recipe/Recipe";
 import "./RecipeList.css";
 
-function RecipeList(props) {
-	const { id, age, title, nutrients, ingredients, directions, note, recipeCredit } = props.recipe;
-	return (
-		<div className="RecipeList">
-			<p>{title}</p>
-			<img src="https://via.placeholder.com/150" alt={title} />
-			<p>Ingredients:</p>
-			{ingredients}
-			<p>Directions:</p>
-			{directions}
-			{note === null && <p>Notes: {note}</p>}
-			<a href={recipeCredit}>See full recipe</a>
-		</div>
-	);
+class RecipeList extends React.Component {
+	state = {
+		recipes   : [],
+		isLoading : true,
+		error     : null
+	};
+
+	componentDidMount() {
+		const { selectedAge } = this.props;
+		// fetch(`http://localhost:9000/api/${selectedAge}`)
+		fetch(`${config.API_BASE_URL}${selectedAge}`)
+			.then(res => {
+				if (!res.ok) {
+					throw new Error(res.status);
+				}
+				return res.json();
+			})
+			.then(data => {
+				// console.log(data);
+				this.setState({
+					recipes   : data,
+					isLoading : false
+				});
+			})
+			.catch(error => {
+				this.setState({
+					isLoading : false,
+					error
+				});
+			});
+	}
+
+	renderRecipeList() {
+		const { recipes, isLoading } = this.state;
+		return (
+			<React.Fragment>
+				{!isLoading ? (
+					<ul className="RecipeList__Recipe">
+						{recipes.map(recipe => (
+							<li key={recipe.id}>
+								<Recipe recipe={recipe} />
+							</li>
+						))}
+					</ul>
+				) : (
+					<h3>Loading recipes...</h3>
+				)}
+			</React.Fragment>
+		);
+	}
+
+	render() {
+		return <div className="RecipeList">{this.renderRecipeList()}</div>;
+	}
 }
 
 export default RecipeList;

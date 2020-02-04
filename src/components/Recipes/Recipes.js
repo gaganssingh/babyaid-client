@@ -1,30 +1,41 @@
 import React from "react";
 import "./Recipes.css";
-import STORE from "../../STORE";
+import RecipeAgeSelection from "../RecipeAgeSelection/RecipeAgeSelection";
 import RecipeList from "../RecipeList/RecipeList";
 
-function Recipes() {
-	return (
-		<section className="Recipes">
-			<section className="Recipes__selector">
-				<h1>Find A Recipe</h1>
-				<form className="recipe-form">
-					<label htmlFor="select-age">Age:</label>
-					<select name="select-age" id="select-age" defaultValue="fourto6">
-						<option value="fourto6">4 to 6 months</option>
-						<option value="sixto8">6 to 8 months</option>
-						<option value="eightto10">8 to 10 months</option>
-						<option value="tento12">10 to 12 months</option>
-					</select>
-				</form>
-			</section>
+class Recipes extends React.Component {
+	state = {
+		selectedAge : "",
+		recipes     : []
+	};
 
-			<section className="Recipes__results">
-				<h2>RecipeList</h2>
-				{STORE.recipes.map(recipe => <RecipeList key={recipe.id} recipe={recipe} />)}
+	handleSelectedAge = age => {
+		this.setState({
+			selectedAge : age
+		});
+		// console.log(this.state.selectedAge);
+	};
+
+	renderRecipeList = () => {};
+	render() {
+		let results;
+		if (this.state.selectedAge === "") {
+			results = <h4>Please select age from the dropdown</h4>;
+		} else {
+			results = <RecipeList selectedAge={this.state.selectedAge} />;
+		}
+
+		return (
+			<section className="Recipes">
+				<section className="Recipes__selector">
+					<h1>Find A Recipe</h1>
+					<RecipeAgeSelection handleSelectedAge={this.handleSelectedAge} />
+				</section>
+
+				<section className="Recipes__results">{results}</section>
 			</section>
-		</section>
-	);
+		);
+	}
 }
 
 export default Recipes;
