@@ -4,7 +4,6 @@ const recipes = {
 	searchByAge(selectedAge) {
 		return fetch(`${config.API_BASE_URL}${selectedAge}`)
 			.then(res => {
-				console.log(config.API_BASE_URL);
 				if (!res.ok) {
 					throw new Error(res.status);
 				}
