@@ -18,6 +18,9 @@ function Recipe(props) {
 				<span className="directions">Directions:</span>
 				{directions.map(direction => <li key={direction}>{direction}</li>)}
 			</ul>
+			<a href={recipe_url} target="__blank">
+				recipe source
+			</a>
 		</div>
 	);
 }
