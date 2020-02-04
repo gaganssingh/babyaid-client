@@ -13,10 +13,8 @@ class Recipes extends React.Component {
 		this.setState({
 			selectedAge : age
 		});
-		// console.log(this.state.selectedAge);
 	};
 
-	renderRecipeList = () => {};
 	render() {
 		let results;
 		if (this.state.selectedAge === "") {

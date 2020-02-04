@@ -2,7 +2,7 @@ import React from "react";
 
 class DoctorSearch extends React.Component {
 	state = {
-		location : "toronto"
+		location : "Toronto"
 	};
 
 	onFormSubmit = e => {
