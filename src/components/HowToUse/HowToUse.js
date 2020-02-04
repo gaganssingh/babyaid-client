@@ -10,7 +10,7 @@ function HowToUse() {
 				Below this section, you'll find the suggested feeding recomendations from The American Academy of Pediatrics
 				&#40;AAP&#41;, as documented by the Stanford Children's Health Institute.
 			</p>
-			<p>If you would like to jump directly to the recipe or doctors section, you can do so below.</p>
+			<p>If you would like to jump directly to the find a recipe or doctor sections, you can do so below.</p>
 			<div className="HowToUse__buttons">
 				<button>
 					<Link to="/recipes">Recipes</Link>

@@ -10,14 +10,14 @@ function Tips() {
 					<span role="img" aria-label="bottle">
 						🍼
 					</span>{" "}
-					Both breast milk and formula provide your baby with the necessary neutrients.
+					Both breast milk and formula provide your baby with the necessary nuutrients.
 				</li>
 				<li>
 					<span role="img" aria-label="bottle">
 						🍼
 					</span>{" "}
 					Soild foods must not be introduced to babies under 4 months of age, unless instructed by your
-					Pediatricians.
+					pediatrician.
 				</li>
 				<li>
 					<span role="img" aria-label="bottle">
@@ -29,7 +29,7 @@ function Tips() {
 					<span role="img" aria-label="bottle">
 						🍼
 					</span>{" "}
-					Feeding too much of the same food may lead to upset stomach and neutrient deficiency. So keep the variety
+					Feeding too much of the same food may lead to upset stomach and nutrient deficiency. So keep the variety
 					coming.
 				</li>
 				<li>
@@ -49,8 +49,8 @@ function Tips() {
 					<span role="img" aria-label="bottle">
 						🍼
 					</span>{" "}
-					Cow's Milk does not contain enough neutrients for you baby and shouldn't be introduced in the diet until
-					age 1 year.
+					Cow's Milk does not contain enough nutrients for your baby and shouldn't be introduced in the diet until
+					the age of 1 year.
 				</li>
 			</ul>
 		</section>
