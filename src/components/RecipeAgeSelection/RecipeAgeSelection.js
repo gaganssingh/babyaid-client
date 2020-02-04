@@ -6,7 +6,6 @@ class RecipeAgeSelection extends React.Component {
 	};
 
 	handleChange = e => {
-		// console.log(e.target.value);
 		this.setState({
 			age : e.target.value
 		});
@@ -15,7 +14,6 @@ class RecipeAgeSelection extends React.Component {
 	handleAgeSelection = e => {
 		e.preventDefault();
 		this.props.handleSelectedAge(this.state.age);
-		console.log(this.state.age);
 	};
 
 	render() {

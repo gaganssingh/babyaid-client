@@ -12,16 +12,16 @@ class RecipeList extends React.Component {
 
 	componentDidMount() {
 		const { selectedAge } = this.props;
-		// fetch(`http://localhost:9000/api/${selectedAge}`)
+		// fetch(`https://nameless-sea-72240.herokuapp.com/api/${selectedAge}`)
 		fetch(`${config.API_BASE_URL}${selectedAge}`)
 			.then(res => {
+				console.log(config.API_BASE_URL);
 				if (!res.ok) {
 					throw new Error(res.status);
 				}
 				return res.json();
 			})
 			.then(data => {
-				// console.log(data);
 				this.setState({
 					recipes   : data,
 					isLoading : false
