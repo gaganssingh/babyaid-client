@@ -1,5 +1,8 @@
 import config from "./config";
 
+// Fires up the fetch call to the Yelp api
+// to get a list of pediatricians and passes
+// it to the Doctors component
 const yelp = {
 	searchByLocation(location) {
 		return fetch(`${config.YELP_ENDPOINT}/businesses/search?term=pediatrician&sort_by=rating&location=${location}`, {
@@ -16,6 +19,9 @@ const yelp = {
 			.then(results => {
 				if (results.businesses) {
 					return results.businesses.map(business => {
+						// formatting the list for
+						// easy consumption by the
+						// Doctors component
 						return {
 							id       : business.id,
 							name     : business.name,

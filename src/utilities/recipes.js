@@ -1,5 +1,8 @@
 import config from "./config";
 
+// Fires up the fetch call to the PostgreSQL
+// database to get a list of recipes and
+// passes it to the Recipes component
 const recipes = {
 	searchByAge(selectedAge) {
 		return fetch(`${config.API_BASE_URL}${selectedAge}`)
@@ -12,6 +15,9 @@ const recipes = {
 			.then(results => {
 				if (results) {
 					return results.map(result => {
+						// formatting the list for
+						// easy consumption by the
+						// Recipes component
 						return {
 							id          : result.id,
 							title       : result.title,
@@ -22,12 +28,6 @@ const recipes = {
 						};
 					});
 				}
-			})
-			.catch(error => {
-				this.setState({
-					isLoading : false,
-					error
-				});
 			});
 	}
 };

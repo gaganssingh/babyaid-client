@@ -4,6 +4,7 @@ class Doctor extends React.Component {
 	render() {
 		return (
 			<div className="Doctor">
+				{/* received the pediatricians list and displays on page */}
 				<h2>{this.props.result.name}</h2>
 				<div className="Doctor-information">
 					<div className="Doctor-address">

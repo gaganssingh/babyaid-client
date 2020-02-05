@@ -8,6 +8,9 @@ class Doctors extends React.Component {
 		results : []
 	};
 
+	// Receive location information from DoctorSearch component
+	// and pass it into the yelp helper function that fetches
+	// a list of pediatricians
 	handleSearch = location => {
 		yelp.searchByLocation(location).then(response => {
 			this.setState({
@@ -20,9 +23,9 @@ class Doctors extends React.Component {
 		return (
 			<div className="Doctors">
 				<h2>Find a Doctor</h2>
-				{/* input field for searching for a doctor in a city */}
+				{/* user input for location to search for pediatricians */}
 				<DoctorSearch handleSearch={this.handleSearch} />
-				{/* Pushing the list of doctors from yelp to a list */}
+				{/* pass the list of pediatricians from yelp helper function */}
 				<DoctorList results={this.state.results} />
 			</div>
 		);

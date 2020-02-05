@@ -11,6 +11,8 @@ class RecipeAgeSelection extends React.Component {
 		});
 	};
 
+	// receives age range info from the form and
+	// passes it up to Recipes component
 	handleAgeSelection = e => {
 		e.preventDefault();
 		this.props.handleSelectedAge(this.state.age);

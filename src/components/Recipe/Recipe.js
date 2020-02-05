@@ -1,6 +1,7 @@
 import React from "react";
 import "./Recipe.css";
 
+// Receives the recipe props and displays on page
 function Recipe(props) {
 	const { title, nutrients, ingredients, directions, recipe_url } = props.recipe;
 	return (
