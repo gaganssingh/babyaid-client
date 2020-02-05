@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../Navigation/Navigation";
+import "./Header.css";
 
 function Header() {
 	return (
 		<header className="Header">
 			<h1>
-				<Link to="/">BabyAid</Link>
+				<Link to="/">babyaid</Link>
 			</h1>
-			<Navigation />
 		</header>
 	);
 }

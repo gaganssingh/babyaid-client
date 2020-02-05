@@ -1,3 +1,27 @@
 .Recipe {
-	border: 1px solid black;
+	border: 1px solid rgba(0, 0, 0, .2);
+	margin: 0 20px 20px 20px;
+	padding: 20px 40px;
+	flex-basis: 30%;
+	background: #fff;
+	box-shadow: 3px 3px 5px .2px rgba(0, 0, 0, .2);
 }
+
+.Recipe ul li {
+	list-style: none;
+}
+
+.nutrients,
+.ingredients,
+.directions {
+	text-decoration: underline;
+}
+
+.Recipe__lists {
+	display: grid;
+	/* flex-direction: row; */
+}
+
+/* .Recipe__lists__directions {
+	flex-direction: column;
+} */

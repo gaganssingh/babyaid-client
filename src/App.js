@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
 import HomePage from "./components/HomePage/HomePage";
 import StartHere from "./components/StartHere/StartHere";
 import Recipes from "./components/Recipes/Recipes";
@@ -13,6 +14,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
+			<Navigation />
 			<main className="App_main">
 				<Switch>
 					<Route exact path="/" component={HomePage} />

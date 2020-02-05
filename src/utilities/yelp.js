@@ -23,16 +23,13 @@ const yelp = {
 						// easy consumption by the
 						// Doctors component
 						return {
-							id       : business.id,
-							name     : business.name,
-							phone    : business.display_phone,
-							address  : business.location.address1,
-							city     : business.location.city,
-							state    : business.location.state,
-							zipCode  : business.location.zip_code,
-							rating   : business.rating,
-							url      : business.url,
-							imageSrc : business.image_url
+							id      : business.id,
+							name    : business.name,
+							phone   : business.display_phone,
+							address : business.location.address1,
+							city    : business.location.city,
+							rating  : business.rating,
+							url     : business.url
 						};
 					});
 				}

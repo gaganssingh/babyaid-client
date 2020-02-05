@@ -1,3 +1,12 @@
+.Navigation {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px;
+	background-color: #79fdce;
+	/* color: #79fdce; */
+	margin-bottom: 7px;
+}
+
 .Navigation ul {
 	display: flex;
 	justify-content: space-evenly;
