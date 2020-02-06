@@ -3,7 +3,7 @@
 ## Description
 An app for new parents designed to guide them through the first year of their newborn's feeding schedule.
 - "Start Here" page takes parents to a page that provides them with preliminary information on feeding, from ages Birth to Year 1.
-- Using the "Recipes" page, parents can look up recipes based on the age of their child. There are 4 categories available, namely: 4 to 6 months, 6 to 8 months, 8 to 10 months and 10 to 12 months.
+- Using the "Recipes" page, parents can look up recipes based on the age of their child. There are 4 categories available, namely: 4 to 6 months, 6 to 8 months, 8 to 10 months and 10 to 12 months and these are pulled from a PostgreSQL dabatase hosted on Heroku. 
 - "Doctors" page takes city name and pulls a list of pediatritions from Yelp using the Yelp Fusion API.
 
 ## Live page:
@@ -17,13 +17,16 @@ https://babyaid-client.now.sh/
 ### Back end built using
 - Nodejs
 - Express
-- PostgreSQL
-- Knex
-- Postgrator
 - Winston
 - Morgan
 - Helmet
 - Dotenv
+
+## Database built & hosted using
+- PostgreSQL
+- Knex
+- Postgrator
+- Heroku
 
 ### External API
 - Yelp Fusion
