@@ -1,8 +1,9 @@
 import React from "react";
+import "./DoctorSearch.css";
 
 class DoctorSearch extends React.Component {
 	state = {
-		location : "Toronto"
+		location : ""
 	};
 
 	onFormSubmit = e => {
@@ -12,13 +13,14 @@ class DoctorSearch extends React.Component {
 
 	render() {
 		return (
-			<form className="DoctorSearch" onSubmit={this.onFormSubmit}>
+			<form className="doctor-form" onSubmit={this.onFormSubmit}>
 				<input
 					type="text"
 					name="location"
 					id="location"
 					value={this.state.location}
 					onChange={e => this.setState({ location: e.target.value })}
+					placeholder="Enter city name"
 					required
 				/>
 				<button type="submit">Search</button>

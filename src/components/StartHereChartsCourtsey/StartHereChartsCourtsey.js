@@ -4,7 +4,7 @@ import "./StartHereChartsCourtsey.css";
 function StartHereChartsCourtsey() {
 	return (
 		<p className="StartHereChartsCourtsey">
-			* Table courtesy of{" "}
+			* Table from{" "}
 			<a
 				href="https://www.stanfordchildrens.org/en/topic/default?id=feeding-guide-for-the-first-year-90-P02209"
 				target="_blank"

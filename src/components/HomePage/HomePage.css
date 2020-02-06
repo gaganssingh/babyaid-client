@@ -1,10 +1,81 @@
-.HomePage__section {
-	margin: 5px;
-	padding: 25px 0;
-	background-color: thistle;
-	border-radius: 5px;
+.HomePage {
+	padding-top: 0;
+	margin-top: 0;
 }
 
-.HomePage__section__last {
-	margin-bottom: 60px;
+.HomePage__hero h1 {
+	margin: 50px 0 0 0;
+}
+.HomePage__hero p {
+	font-size: .8em;
+	padding: 5px;
+}
+
+.HomePage__section {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.HomePage__section__div {
+	margin: 15px;
+	padding: 5px;
+	background-color: var(--secondary);
+	border-radius: 10px;
+	color: white;
+}
+
+.HomePage__section__div h2 {
+	font-size: 1.3em;
+	padding: 0;
+}
+.HomePage__section__div p {
+	font-size: .8em;
+}
+
+.HomePage__section__div:last-child {
+	margin-bottom: 70px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+	.HomePage__hero h1 {
+		font-size: 2em;
+	}
+
+	.HomePage__hero p {
+		font-size: 1em;
+	}
+
+	.HomePage__section__div {
+		width: 75%;
+		margin: 15px auto;
+	}
+
+	.HomePage__section__div h2 {
+		font-size: 1.7em;
+	}
+	.HomePage__section__div p {
+		font-size: 1em;
+	}
+}
+
+/* large tablets & laptops */
+@media screen and (min-width: 960px) {
+	.HomePage__section__div {
+		width: 76%;
+	}
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+	.HomePage__section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.HomePage__section__div {
+		width: 50%;
+	}
 }

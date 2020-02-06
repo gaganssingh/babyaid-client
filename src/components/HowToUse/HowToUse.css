@@ -1,1 +1,27 @@
+/* .HowToUse__buttons {
+	display: flex;
+	flex-direction: column;
 
+} */
+
+.HowToUse__buttons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.HowToUse h3 {
+	margin: 25px 0 15px 0;
+	color: var(--secondary);
+}
+
+/* desktop styles */
+@media screen and (min-width: 620px) {
+	.HowToUse__buttons {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.doctors-link {
+		margin-left: 30px;
+	}
+}

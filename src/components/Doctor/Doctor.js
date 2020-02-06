@@ -9,15 +9,15 @@ function Doctor(props) {
 			<h2>{name}</h2>
 			<div className="Doctor__information">
 				<div className="Doctor__address">
-					<p>{phone}</p>
 					<p>{address}</p>
 					<p>{city}</p>
+					<p>{phone}</p>
 				</div>
 				<div className="Doctor__Ratings">
 					<h4 className="rating">{rating} stars</h4>
 				</div>
 				<a className="Doctor__yelp" href={url} target="__blank">
-					View on Yelp
+					View on Yelp!
 				</a>
 			</div>
 		</div>

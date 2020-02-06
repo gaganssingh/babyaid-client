@@ -1,0 +1,27 @@
+.DoctorList__Doctor {
+	margin: 20px auto 70px;
+}
+
+@media screen and (min-width: 620px) {
+	.DoctorList__Doctor {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.DoctorList__Doctor li {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.DoctorList__Doctor {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.DoctorList__Doctor li {
+		width: 30%;
+	}
+}

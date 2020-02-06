@@ -1,8 +1,9 @@
 import React from "react";
+import "./Tips.css";
 
 function Tips() {
 	return (
-		<section className="StartHere__recommendations">
+		<section className="Tips">
 			<h3>Tips to start you off right</h3>
 			<p>If you were to take anything from this guide, this is it:</p>
 			<ul>

@@ -16,7 +16,7 @@ function HowToUse() {
 					<Link to="/recipes">Recipes</Link>
 				</button>
 				<br />
-				<button>
+				<button className="doctors-link">
 					<Link to="/doctors">Doctors</Link>
 				</button>
 			</div>

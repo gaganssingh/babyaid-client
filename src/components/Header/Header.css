@@ -1,4 +1,18 @@
 .Header {
 	font-family: 'Comfortaa', cursive;
 	padding: 8px;
+	color: black;
+}
+
+.Header h1 {
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+	.Header h1 {
+		font-size: 1.4em;
+	}
 }

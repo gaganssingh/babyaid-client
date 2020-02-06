@@ -1,17 +1,21 @@
 import React from "react";
 import Doctor from "../Doctor/Doctor";
+import "./DoctorList.css";
 
-class DoctorList extends React.Component {
-	render() {
-		return (
-			<div className="DoctorList">
-				{/* gets the pediatricians list prop and maps to Doctor component */}
-				{this.props.results.map(result => {
-					return <Doctor key={result.id} result={result} />;
-				})}
-			</div>
-		);
-	}
+function DoctorList(props) {
+	return (
+		<React.Fragment>
+			{
+				<ul className="DoctorList__Doctor">
+					{props.results.map(result => (
+						<li key={result.id}>
+							<Doctor result={result} />
+						</li>
+					))}
+				</ul>
+			}
+		</React.Fragment>
+	);
 }
 
 export default DoctorList;

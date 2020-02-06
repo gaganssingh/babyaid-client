@@ -20,13 +20,22 @@ class Doctors extends React.Component {
 	};
 
 	render() {
+		// Conditional rendering for behaviour before and after
+		// user selection of age group in the DoctorSearch
+		// component
+		let results;
+		if (this.state.results.length === 0) {
+			results = <h4>Please enter a valid city name</h4>;
+		} else {
+			results = <DoctorList results={this.state.results} />;
+		}
 		return (
 			<div className="Doctors">
 				<h2>Find a Doctor</h2>
 				{/* user input for location to search for pediatricians */}
 				<DoctorSearch handleSearch={this.handleSearch} />
 				{/* pass the list of pediatricians from yelp helper function */}
-				<DoctorList results={this.state.results} />
+				<section className="Recipes__results">{results}</section>
 			</div>
 		);
 	}

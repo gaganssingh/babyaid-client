@@ -4,5 +4,8 @@ footer {
 	left: 0;
 	right: 0;
 	padding: 10px 0;
-	background-color: rgb(168, 167, 167);
+	margin-top: 15px;
+	background-color: var(--secondary);
+	color: white;
+	border-top: 3px solid white;
 }

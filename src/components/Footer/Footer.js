@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
 	return (
 		<footer className="Footer">
-			<p>@ 2019 BabyAid</p>
+			<p>@ 2020 babyaid</p>
 		</footer>
 	);
 }

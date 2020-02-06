@@ -1,0 +1,18 @@
+.StartHereCharts h3 {
+	color: var(--secondary);
+}
+
+.StartHereCharts__last {
+	margin-bottom: 70px;
+}
+
+@media screen and (min-width: 960px) {
+	/* .StartHereCharts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.StartHereCharts div {
+		flex-direction: column;
+	} */
+}

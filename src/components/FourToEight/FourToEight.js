@@ -2,7 +2,7 @@ import React from "react";
 
 function FourToEight() {
 	return (
-		<table className="FourToEight">
+		<table className="FourToEight" style={{ width: "100%" }}>
 			<thead>
 				<tr>
 					<th>Item</th>
@@ -12,7 +12,7 @@ function FourToEight() {
 			</thead>
 			<tbody>
 				<tr>
-					<td>Breastfeeding or formula</td>
+					<td>Breast feeding or formula</td>
 					<td>4 to 6 feedings per day or 28 to 32 ounces per day</td>
 					<td>3 to 5 feedings per day or 30 to 32 ounces per day</td>
 				</tr>
@@ -27,12 +27,12 @@ function FourToEight() {
 					<td>2 to 3 tbs., plain, strained/2 times per day</td>
 				</tr>
 				<tr>
-					<td>Vegetables</td>
+					<td>Vegies</td>
 					<td>1 to 2 tbs., plain, strained/1 to 2 times per day</td>
 					<td>2 to 3 tbs., plain, strained/2 times per day</td>
 				</tr>
 				<tr>
-					<td>Meats and protein foods</td>
+					<td>Meats & Proteins</td>
 					<td>1 to 2 tbs., strained/2 times per day</td>
 					<td>1 to 2 tbs., strained/2 times per day</td>
 				</tr>
@@ -40,11 +40,6 @@ function FourToEight() {
 					<td>Snacks</td>
 					<td>Arrowroot cookies, toast, crackers</td>
 					<td>Arrowroot cookies, toast, crackers, plain yogurt</td>
-				</tr>
-				<tr>
-					<td>Development</td>
-					<td>Make first cereal feedings very soupy and thicken slowly.</td>
-					<td>Start finger foods and cup.</td>
 				</tr>
 			</tbody>
 		</table>

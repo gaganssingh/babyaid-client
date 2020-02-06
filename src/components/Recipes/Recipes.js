@@ -6,7 +6,8 @@ import "./Recipes.css";
 
 class Recipes extends React.Component {
 	state = {
-		recipes : []
+		recipes   : [],
+		isLoading : false
 	};
 
 	// Receives age range info from RecipeAgeSelection component,
@@ -14,10 +15,17 @@ class Recipes extends React.Component {
 	// recipes from the PostgreSQL database and send them to the
 	// RecipeList component as a prop
 	handleSelectedAge = age => {
+		this.toggleIsLoading();
 		recipes.searchByAge(age).then(response => {
 			this.setState({
 				recipes : response
 			});
+		});
+	};
+
+	toggleIsLoading = () => {
+		this.setState({
+			isLoading : true
 		});
 	};
 

@@ -1,3 +1,7 @@
+.StartHereChartsCourtsey {
+	margin-top: 10px;
+}
 .StartHereChartsCourtsey a {
-	color: #b3294e;
+	color: var(--secondary);
+	font-weight: bold;
 }
