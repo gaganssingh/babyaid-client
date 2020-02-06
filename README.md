@@ -34,10 +34,10 @@ https://babyaid-client.now.sh/
 - Supertest
 
 ## Screenshots
-![picture](screenshots/01-HomePage.png)
-![picture](screenshots/02-StartHere.png)
-![picture](screenshots/03-Recipes.png)
-![picture](screenshots/04-Doctors.png)
+![Homepage](/images/01-HomePage.png)
+![StartHere](/images/02-StartHere.png)
+![Recipes](/images/03-Recipes.png)
+![Doctors](/images/04-Doctors.png)
 
 
 ## Github repos:
