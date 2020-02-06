@@ -38,7 +38,8 @@ https://babyaid-client.now.sh/
 ![StartHere](/images/02-StartHere.png)
 ![Recipes](/images/03-Recipes.png)
 ![Doctors](/images/04-Doctors.png)
-
+<img src="/images/01-HomePage.png">
+<img src="images/01-HomePage.png">
 
 ## Github repos:
 ### Client:
