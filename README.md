@@ -10,7 +10,7 @@ An app for new parents designed to guide them through the first year of their ne
 https://babyaid-client.now.sh/
 
 ## Technical stack
-### Front End built using
+### Front end built using
 - React (create-react-app)
 - React Router
 
